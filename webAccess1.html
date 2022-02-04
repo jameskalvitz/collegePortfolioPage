@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html id="home" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+    <title tabindex="1">Lab 4 - Page 1</title>
+
+    <style>
+        /*This css layout is good for mobile, tablet, and desktop.*/
+
+
+
+
+/*Viewport units do not account for 10 pixels that the vertical scrollbar takes up.
+
+when the vertical scrollbar activates you also get a horiconatl scrollbar.
+
+by default the body element has 8px of margin on all sides.
+
+below is a CSS reset. This removes these issues that cause the body element to overflow.*/
+*{
+    margin:0 auto;
+    padding:0 auto;
+    box-sizing:border-box;
+}
+
+
+  /* the html and body element settings allow html element to reference the parent viewport and have a height value equal to 100% of the viewport value.
+  
+  with the html element recieving a height value, the min-height value is assigned to the body element gives it an inital height that matches the HTML element
+  
+  both of these elements allow:
+
+  -body to grow taller with content outgrowth
+  
+  Con:
+
+  -HTML element does not grow beyond the height of viewport (this is considered acceptable though)*/
+html{
+    height: 100%;
+}
+body{
+  display:flex;
+  justify-content: center;
+  font-family: 'Yomogi', cursive;
+    min-height: 100%;
+    background-color: black;
+    /*background-color: white;*/
+}
+main, header, section, footer {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    color: black;
+}
+
+main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    background:rgb(0, 0, 0);
+}
+.header_text{
+  font-size:30px;
+}
+.header {
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    color:white;
+}
+
+.hero {
+            /* Flexbox stuff */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            /* Text styles */
+            text-align: center;
+        background-image:url("hero_img2.jpg");
+        font-size:30px;
+          /* Sizing */
+          width: 98.4%;
+          height: 100vh;
+          
+          
+          /* Background styles */
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+}
+
+/*For the Content elements, we’ve added the flex property.
+
+flex: 1, which is shorthand for flex-grow: 1, flex-shrink: 1, and flex-basis: 0%.
+*/
+.content {
+    flex: 1;
+    background: gray;
+}
+
+
+
+/*For the Sidebar elements, we’ve added the flex property.
+
+On the Sidebar, to set its width to 300px, we will use flex: 0 1 300px.
+
+This will ensure that the Sidebar will always be 300px, and the rest of the space will be distributed to the Content section.*/
+.sidebar {
+  display:flex;
+    flex: 0 1 300px;
+    border: 1px solid #000000;
+    background: rgb(0, 0, 0);
+}
+
+
+
+.footer {
+    display:flex;
+    justify-content: center;
+    border: 1px solid #000000;
+    background: white;
+}
+
+
+/*
+This is a helper class
+
+This will set the max-width of the element to 1200px (converted into rem units), and also center it on widths larger than 1200px.
+
+In the HTML we will add the .wrapper class to the flex-conatiner class(class="flex-container"), since we want to limit the width for the Content and Sidebar container.
+
+this will add extra space around the Content/Sidebar wrapper, just like we wanted
+
+*/
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    right:0;
+    z-index:1;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
+  .h3_border{
+      display:flex;
+      text-align:center;
+      border-style:double;
+      border-color:black;
+  }
+  .h3_border_links{
+    display:flex;
+    text-align:center;
+    border-style:double;
+    border-color:black;
+}
+  .p_good{
+    display:flex;
+    text-align:center;
+  }
+  .p_bad{
+    display:flex;
+    text-align:center;
+  }
+  .link_1{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    background:black;
+    margin:10px;
+    font-size:25px;
+  }
+
+  .link_2{
+    display:flex;
+    justify-content: center;
+    display:flex;
+    text-align:center;
+    padding:20px;
+    text-align:center;
+    padding:20px;
+    margin:10px;
+    font-size:25px;
+  }
+  .link_3{
+    display:flex;
+    text-align:center;
+    justify-content:center;
+}
+  a{
+      text-decoration: none;
+  }
+.p_links{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content:center;
+  padding:20px 0px 20px 0px;
+  margin:90px 0px 0px 0px;
+}
+
+/*Using a media query, we will turn on flexbox when the device width is 640px and above. Meaning that on smaller widths on phones, it will remain stacked. Once it hits that 640 mark it will switch to the flexbox layout.*/
+@media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }    
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (min-width: 500px){
+    .hero{
+        display:flex;
+        width: auto;
+        height: 60vh;
+    }
+}
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+    </style>
+
+</head>
+
+<!--Below the body tag is the markup for flexbox in css to build structure and style.-->
+
+<body>
+    <!-- Main Content -->
+<main>
+    <div class="fixedNav">
+    <div class="topnav" id="myTopnav">
+
+            <a class="active"href="index.html" tabindex="2"><i class="fa fa-fw fa-home"></i>Home</a>
+
+            <a class="active" href="#good_1" tabindex="3"><i class="fa fa-fw fa-search"></i>Good Accessibility</a>
+
+            <a class="active" href="#bad_ac" tabindex="4"><i class="fa fa-fw fa-search"></i> Bad Accessibility</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+</div>
+</div>
+
+    <!-- Header -->
+    <header class="header">
+        <p class="header_text" tabindex="5">
+          Good VS Bad Accessible Websites
+        </p>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <p tabindex="6"><b>Examples of Accessible and Inaccessible Websites</b></p>
+    </section>
+
+
+<div class="flex-container wrapper">
+
+    <!-- Content -->
+
+    <section class="content" id="good_1">
+
+        <div class="h3_border">
+            <h3 tabindex="7">Good Accessible Website</h3>
+            </div>
+            <a href="https://www.lonelyplanet.com/" class="link_2" tabindex="8" target="_blank">www.Lonelyplanet.com</a>
+        
+       
+
+        <div class="p_good">
+        <p tabindex="9">
+            This website has an ADHD Friendly Profile and helps those specific visitors focus on specific sections of the website while eliminating distractions. This profile was specially designed to help people with ADHD and Neurodevelopmental disorders browse, read, and focus on the website easily, and is an excellent way to keep users focused on achieving conversion goals.
+        </p>
+        </div>
+
+    </section>
+
+    <section class="content" id="bad_ac">
+
+        <div class="h3_border">
+            <h3 tabindex="10">Bad Accessible Website</h3>
+            </div>
+            <a href="https://airtable.com" class="link_2" tabindex="11" traget="_blank">www.Airtable.com</a>
+    
+          
+
+        <div class="p_bad">
+        <p tabindex="12">
+            The gray color used for the font and border of the login area of the airtable.com user interface fails the contrast ratio guidelines. It
+            affects users with vision impairments (low vision, color blindness, etc.), and even users with good vision in brightly lit situations or low contrast displays.
+        </p>
+        </div>
+
+    </section>
+
+ 
+
+</div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p tabindex="13">
+            <b>&#169; Copyright 2021 James Kalvitz</b>
+
+        </p>
+    </footer>
+
+</main>
+
+<script>
+    /*
+toggle between adding and removing the responsive class to topnav when the user clicks on the icon
+*/
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
+</script>
+
+</body>
+</html>

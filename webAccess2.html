@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html id="home">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title tabindex="1">Lab 4 - Page 2</title>
+
+<style>
+    *{
+  margin:auto;
+  padding:auto;
+  
+}
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+header{
+  margin:0px 0px 100px 0px;
+  font-size:30px;
+}
+footer{
+  margin:100px 0px 0px 0px;
+}
+/*.container{
+  display:flex;
+  flex-direction:column;
+  border-style:double;
+  border-width:5px;
+  margin:20px 10px 20px 10px;
+  padding:10px;
+}*/
+.good_h3{
+  margin:15px;
+}
+.bad_h3{
+  margin:15px;
+}
+.section1{
+  flex-direction: column;
+  justify-content: center;
+  border-style:solid;
+  border-color:black;
+  padding:10px;
+  margin:50px;
+}
+.section1 a{
+  flex-direction: column;
+  text-decoration-line: none;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+  color:blue;
+  font-size:20px;
+  margin:20px;
+}
+.section2{
+  flex-direction:column;
+  justify-content: center;
+  border-style:solid;
+  border-color:black;
+  padding:10px;
+  margin:50px;
+}
+.section2 a{
+  flex-direction: column;
+  text-decoration-line: none;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+  color:blue;
+  font-size:20px;
+  margin:20px;
+}
+.hero{
+/* Flexbox stuff */
+display: flex;
+justify-content: center;
+align-items: center;
+background: transparent;
+/* Text styles */
+text-align: center;
+background-image:url("hero_img.jpg");
+font-size:30px;
+/* Sizing */
+width: 100%;
+height: 100vh;
+/* Background styles */
+background-size: cover;
+background-position: bottom center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 50px 8px 50px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  display:flex;
+  flex-direction:column;
+  transition: margin-left .5s;
+  padding: 16px;
+  text-align:center;
+}
+#open_color{
+  margin:0px 0px 100px 0px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 450px) {
+  #main {padding-top: 15px;}
+  #main {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+    <!--side bar javascript start-->
+    <div id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;
+        </a>
+
+        <a class="active"href="index.html" tabindex="2">
+            
+            <i class="fa fa-fw fa-home"></i>
+            
+            Home
+        
+        </a>
+
+        <a href="#good_1" tabindex="3"><i class="fa fa-fw fa-search"></i>Good Accessibility</a>
+
+        <a href="#bad_ac" tabindex="4"><i class="fa fa-fw fa-search"></i> Bad Accessibility</a>
+
+    </div>
+
+<div id="main" class="container"><!--javascript container for content pushed to right of sidebar-->
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+
+        <P id="burger_color">
+            &#9776;
+        </P>
+
+         <p id="open_color" tabindex="5">open</p>
+        
+        </span>
+        <!--side bar javascript end-->
+
+
+
+    <!-- Header -->
+    <header class="header">
+        <p tabindex="6">
+            Good VS Bad Accessible Websites
+        </p>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <p tabindex="7">
+            Examples of Accessible and Inaccessible Websites
+        </p>
+    </section>
+
+
+ 
+
+    <!-- Content -->
+    
+    <!--<div class="container">-->
+
+        <section id="good_1" class="section1">
+
+        
+            <div class="good_h3">
+                <h3 tabindex="8">
+                    Good Accessible Website
+                </h3>
+            </div>
+
+            <a href="https://www.lonelyplanet.com/" tabindex="9" target="_blank">www.Lonelyplanet.com</a>
+    
+    
+
+            <div class="good_h3">
+                <p tabindex="10">
+                This website has an ADHD Friendly Profile and helps those specific visitors focus on specific sections of the website while eliminating distractions. This profile was specially designed to help people with ADHD and Neurodevelopmental disorders browse, read, and focus on the website easily, and is an excellent way to keep users focused on achieving conversion goals.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="bad_ac" class="section2">
+
+            <div class="bad_h3">
+                <h3 tabindex="11">
+                    Bad Accessible Website
+                </h3>
+
+            </div>
+
+            <a href="https://airtable.com" tabindex="12" target="_blank">
+                www.Airtable.com
+            </a>
+
+        
+
+            <div class="bad_h3">
+                <p tabindex="13">
+                The gray color used for the font and border of the login area of the airtable.com user interface fails the contrast ratio guidelines. It
+                affects users with vision impairments (low vision, color blindness, etc.), and even users with good vision in brightly lit situations or low contrast displays.
+                </p>
+            </div>
+
+        </section>
+
+    <!--</div>-->
+
+
+
+    <!-- Footer -->
+    <div>
+
+        <footer class="footer">
+            <p tabindex="14">
+
+             &#169; Copyright 2021 James Kalvitz
+
+            </p>
+        </footer>
+
+    </div>
+
+</div>
+
+<script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+
+  /*javascript open text color from black to transparent in javascript getElementById*/
+  document.getElementById("open_color").style.color="transparent";
+
+
+  /*javascript burger symbol (&#9776;) color from black to transparent in javascript getElementById*/
+  document.getElementById("burger_color").style.color="transparent";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("open_color").style.color="black";
+  document.getElementById("burger_color").style.color="black";
+}
+</script>
+
+</body>
+</html> 

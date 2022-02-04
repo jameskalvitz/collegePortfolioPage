@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <style>
+      * { 
+    margin: 0;
+    margin-top:10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+}
+body { 
+background-color: rgb(0, 0, 0); 
+color:white;
+min-height: 100vh; }
+.content {
+    display: flex;
+    justify-content: center;
+    max-width:auto;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom:auto;
+  }
+  .topnav {
+    background-color: rgb(0, 0, 0);
+    border-style:solid;
+    border-right-color: transparent;
+    border-left-color:transparent;
+    border-top-color: transparent;
+    border-bottom-color:rgb(248, 248, 248);
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    right:0;
+    z-index:1;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .topnav a {
+    float: left;
+    display:block;
+    color: #ececec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  .topnav a.active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .topnav a.active:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(161, 161, 156);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .topnav .icon:hover{
+    color:rgb(124, 124, 120);
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  fieldset{
+      padding:20px;
+  }
+  legend{
+      font-size:30px;
+      color:red;
+  }
+  label{
+      color:red;
+  }
+  @media screen and (min-width: 600px) {
+    .flex-container {
+      display:flex;
+      font-size:25px;
+    }
+}
+    </style>
+</head>
+<body class="container">
+        <header>
+          <!-- Header content -->
+          <h1><u>Componenets of a Drumset</u></h1>
+        </header>
+      
+        <nav>
+          <!-- Navigation -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topicInterest1.html" class="active">Introduction Page</a></li>
+            <li><a href="topicInterest2.html">Info</a></li>
+          </ul>
+        </nav>
+      
+        <main>
+          <!-- Main content -->
+          <div class="introduction">
+          <h2>Introduction</h2>
+        <p class="introduction_p">This document provides a guide that will help you distinguish and learn each piece of drum hardware that is crucial for your drum kit. Each part of your drumset needs to be assessed and implimented correctly in order for your kit to function properly as a full drum kit.</p>
+          </div>
+        </main>
+
+        <aside>
+            <!-- Sidebar / Ads -->
+            <img class="aside_img" src="https://img.kytary.com/eshop_ie/stredni_v4/na/636709633463500000/f22848e3/64331562/mapex-storm-fusion-set-camphor-wood-grain.jpg" alt="A picture of a drum set at sitting point of view">
+
+            <img class="aside_img2" src="https://img.kytary.com/eshop_ie/stredni_v4/na/636709633451870000/bd3bed8f/64331559/mapex-storm-fusion-set-camphor-wood-grain.jpg" alt="A picture of a tom drum mounted to a drum set">
+
+
+            <img class="aside_img3" src="https://c1.zzounds.com/media/productmedia/fit,2018by3200/quality,85/12189xn-5725fe20ec11098f0e9b7e067aa4511a.jpg" alt="A picture of a drum set ride cymbal">
+
+            <img class="aside_img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8WnA3CdoilMvrKZb1SL0YeciW0LW46IEew&usqp=CAU" alt="A picture of  drum set HitHat cymbals">
+
+        </aside>
+</body>
+
+</html>

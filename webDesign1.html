@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html id="topOfPage" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<style>
+  html{
+  scroll-behavior: smooth;
+  text-align:center;
+  font-family: 'Indie Flower', cursive;
+}
+body {
+    margin:0;
+    background-color:black;
+    color:rgb(180, 180, 180);
+  }
+ul {
+  display:flex;
+  justify-content:space-between;
+    list-style-type: none;
+    margin: 0;
+    padding:0px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+  }
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin:10px 100px 10px 100px;
+    padding:10px;
+    text-decoration: none;
+  }
+  .active{
+    background-color: transparent;
+  }
+  .active:hover{
+      background-color:aquamarine;
+  }
+h1{
+    text-align:center;
+    position:relative;
+    top:100px;
+    padding:140px;
+    font-size:100px;
+    background-color:rgb(0, 0, 0);
+}
+.h1{
+  
+  animation-name:colorChange;
+  animation-duration: 3s; 
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  transition:1s ease;
+}
+@keyframes colorChange{
+  0% {
+      color:#ffffff;
+    
+    }
+  20%{
+    color:#ffffff;
+  }
+  35%{
+    color:#ffffff;
+  }
+    50% {
+      color:#ffffff;
+      
+    }
+    100% {
+      color:#000000;
+      filter:blur(10px);
+      
+    }
+  }
+main{
+    background-image: linear-gradient(#020202, #3b3a3a);
+    margin: 300px 0px 0px 0px;
+    text-align:center;
+}
+footer{
+    text-align:center;
+    color:white;
+    bottom: 0;
+    width:100%;
+}
+div{
+    border-style:double;
+    border-width:5px;
+    border-color:black rgb(0, 0, 0) black rgb(0, 0, 0);
+    margin:50px 300px 50px 300px;
+    text-underline-position: under;
+
+}
+aside{
+  margin:50px 200px 50px 200px;
+  background-color:black;
+}
+.aside_background{
+  background-color:black;
+}
+.green{
+  color:green;
+}
+.red{
+  color:red;
+}
+a{
+  text-decoration: none;
+  text-align:center;
+  color:white;
+  transition:1s ease;
+  font-size:30px;
+}
+a:hover{
+  text-decoration: none;
+  text-align:center;
+  color:white;
+  transition:1s ease;
+  letter-spacing:2px;
+}
+.article{
+  padding:100px 0px 0px 0px;
+  font-size:50px;
+}
+p{
+  font-size:30px;
+}
+h2{
+  font-size:40px;
+}
+h3{
+  font-size:35px;
+}
+legend{
+  font-size:30px;
+}
+fieldset{
+  padding:20px;
+  margin:20px;
+}
+
+
+
+</style>
+</head>
+<body>
+<header>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="#Good+Bad" class="active">Good and Bad Web Pages</a></li>
+    <li><a href="#Links" class="active">Links</a></li>
+  </ul>
+
+  <h1 class="h1">Web Pages</h1>
+</header>
+
+  <main>
+
+    <article id="Good+Bad" class="article">Examples of Good Web Design and Bad Web Design</article>
+
+    <div>
+      <h2 class="green">Dropbox.com (consumer)</h2>
+      <h3><u>Summary</u></h3>
+      <p>Dropbox is a service for file hosting. Operations are operated by the American company Dropbox Inc. The headquarters are in San Francisco, California. Dropbox offers cloud storage, file synchronization, personal cloud, and client software.</p>
+      <h3 class="green"><u>Why is this a good web page?</u></h3>
+      <p>Dropbox's homepage and overall website is built simplified. The copy and visuals embrace whitespace. The site seems to capture your attention with the subtle use of playful animation which makes the website interactive for how subtle it is. The message to clients is straight forward when you read the sub headline of the website.<i>"Get all your files from anywhere, on any device, and share them with anyone."</i>The google sign-up feature reduces the hassle for visitors who hate completing long registration forms.</p>
+    </div>
+    <hr>
+    <div>
+      <h2 class="green">Airbnb.com</h2>
+      <h3><u>Summary</u></h3>
+      <p>Airbnb is an American company that operates within an online marketplace for homestays, lodgin, vacation rentals, and tourism activites. The company is based in San Francisco, California and is a platform that is accessible via website and mobile application.</p>
+      <h3 class="green"><u>Why is this a good web page?</u></h3>
+      <p>The homepage alone is aesthetic. The greeting during entry of the site has high definintion footage of traveling and travelers doing activities as if they are locals. The website includes a destination and date search form that most visitors use when they come looking for a up front, guiding, and logical next step when planning their trip. The search form will auto fill the users last search if theyr logged in. Overall, the site is interactive and aesthetically pleasing to the eye.</p>
+    </div>
+    <hr>
+    <div>
+    <h2 class="red">Arngen.net</h2>
+    <h3><u>Summary</u></h3>
+    <p>Arngren is a website Norwegian website that was founded in 2002. The Arngren website is used primarily to sell all sorts of weird gadgets and appliances. The website proposes a mass collection of items that vary from vehicles, bikes, scooters, electronics, collectibles, and etc for purchase.</p>
+    <h3 class="red"><u>Why is this a bad web page?</u></h3>
+    <p>The website has poor color usage. The navigation of the website if hard to navigate through. Most of the typography is confusing or too tiny. There is not a clear message about the business core values.</p>
+  </div>
+  <hr>
+  <div>
+    <h2 class="red">Greatdreams.com</h2>
+    <h3><u>Summary</u></h3>
+    <p>Greatdreams is a site that is dedicated to presenting compelling evidence of great world change. some of the research on the site will provide research invoking numbers of areas including UFO's, ETs, Crop Circles, Coincidences, signs in the sky, rophecies, Myths, and religions. 
+      <h3 class="red"><u>Why is this a bad web page?</u></h3>
+    </p>When you land on the main page it is way too long and too dull to get to the bottom of the page. The design is very unattractive. The top message says.<i>"Please refresh your page to get the latest issue!</i> which is very odd. The website does not seem to have a clear theme. as you scroll down you will see that the webpage width has changed. The color choices are all over the place.</p>
+  </div>
+
+  <div class="aside_background">
+
+    <aside>
+      <fieldset id="Links" class="column2">
+        <legend class="green"><b>Links to Good Web Pages</b></legend>
+        <p class="space_links"><a class="a" target="_black" href="https://www.airbnb.com/a/stays/?ghost=true&af=43720035&c=.pi0.pk25650614176_308605552029_c_12026464216&sem_position=&sem_target=kwd-12026464216&location_of_interest=&location_physical=9015249&ghost=true&gclid=EAIaIQobChMIkL_b4KGx8QIVL3FvBB2cWg7FEAAYASAAEgKxn_D_BwE">Airbnb.com</a></p>
+        <p class="space_links"><a class="a" href="https://www.dropbox.com/individual/plans-comparison" target="_black">Dropbox.com</a></p>
+      </fieldset>
+
+      <fieldset class="column2">
+        <legend class="red"><b>Links to Bad Web Pages</b></legend>
+        <p class="space_links"><a class="a" target="_black" href="https://arngren.net/">Arngen.net</a></p>
+        <p class="space_links"><a class="a" href="http://www.greatdreams.com/" target="_black">Greatdreams.com</a></p>
+      </fieldset>
+    </aside>
+
+  </div>
+
+<footer>
+  <p>© 2021 by James Kalvitz</p>  
+</footer>
+</body>
+</html>

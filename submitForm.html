@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+    margin: 0;
+    margin-top:10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+}
+body { 
+background-color: rgb(0, 0, 0); 
+color:white;
+min-height: 100vh; }
+.content {
+    display: flex;
+    justify-content: center;
+    max-width:auto;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom:auto;
+  }
+  .topnav {
+    background-color: rgb(0, 0, 0);
+    border-style:solid;
+    border-right-color: transparent;
+    border-left-color:transparent;
+    border-top-color: transparent;
+    border-bottom-color:rgb(248, 248, 248);
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    right:0;
+    z-index:1;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .topnav a {
+    float: left;
+    display:block;
+    color: #ececec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  .topnav a.active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .topnav a.active:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(161, 161, 156);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .topnav .icon:hover{
+    color:rgb(124, 124, 120);
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  fieldset{
+      padding:20px;
+  }
+  legend{
+      font-size:30px;
+      color:red;
+  }
+  label{
+      color:red;
+  }
+  @media screen and (min-width: 600px) {
+    .flex-container {
+      display:flex;
+      font-size:25px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!--navigation bar-->
+    <div class="fixedNav">
+        <div class="topnav" id="myTopnav">
+        <div class="topnav2">
+    
+                <a class="active"href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+    </div>        
+    </div>
+    </div>
+
+    <div class="flex-container content">
+    <form action = "http://www.randyconnolly.com/tests/process.php" >
+        <fieldset>
+            <legend> Pizza Order</legend>
+
+        <label for="Name">Name:</label>
+        <input text="text" name="frmName" id="name">
+        <br>
+        <label for="Phone">Phone:</label>
+        <input text="text" name="frmPhone" id="phone">
+        <br>
+        <label for="Size">Size:</label>
+        <select name="frmSize" id="size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+        <br>
+        <label for="Type of Crust">Type of Crust:</label>
+        <select name="frmCrust" id="typeOfCrust">
+            <option value="1">Thin</option>
+            <option value="2">Thick</option>
+            <option value="3">Stuffed</option>
+        </select>
+        <br>
+        <label for="Pepperoni">Pepperoni:</label>
+        <select name="frmPepperoni" id="pepperoni">
+            <option value="Y">yes</option>
+            <option value="N">No</option>
+        </select>
+        <br>
+        <label for="Mushrooms">Mushrooms:</label>
+        <select name="frmMushrooms" id="mushrooms">
+            <option value="Y">yes</option>
+            <option value="N">No</option>
+        </select>
+        <br>
+        <label for="Extra Cheese">Extra Cheese:</label>
+        <select name="frmCheese" id="extraCheese">
+            <option value="Y">yes</option>
+            <option value="N">No</option>
+        </select>
+        <br>
+        <label for="Delivery">Delivery:</label>
+        <select name="frmDelivery" id="delivery">
+            <option value="Y">yes</option>
+            <option value="N">No</option>
+        </select>
+        <br>
+        <label for="Extra Instructions">Extra Instructions:</label>
+        <input text="text" name="frmInstructions" id="extraInstructions">
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </fieldset>
+    </form>
+</div>
+<script>
+
+</script>
+</body>
+</html>

@@ -6,7 +6,7 @@ College Portfolio Projects (Use google drive to download and view the static pag
 <ol>
   <li>Right click below</li>
   <br>
-  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1TjSW9vOlQ2aRTEo5lGSfcykRYngguKXH?usp=sharing">right click Here and select "open in tab"</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1TjSW9vOlQ2aRTEo5lGSfcykRYngguKXH?usp=sharing">right click Here and select "open link in new tab"</a>
   <br>
   <br>
   <li>Select "Download all"</li>

@@ -5,7 +5,7 @@ College Portfolio Projects (Use google drive to download and view the static pag
 <ol>
   <li>Click the link below</li>
   <br>
-  <a href="https://drive.google.com/drive/folders/1TjSW9vOlQ2aRTEo5lGSfcykRYngguKXH?usp=sharing" target="_blank">Click Here</a>
+  <a target="_blank" href="https://drive.google.com/drive/folders/1TjSW9vOlQ2aRTEo5lGSfcykRYngguKXH?usp=sharing">Click Here</a>
   <li>Select "Download all"</li>
   <li>Go to your computer files, locate the "Home page" .zip folder</li>
   <li>Right click and Extract the "Home page" .zip folder</li>

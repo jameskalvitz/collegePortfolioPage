@@ -1,6 +1,6 @@
 # collegePortfolioPage
 <br>
-College Portfolio Projects (Use google drive to download and view the static pages.)
+College Portfolio Projects (Use google drive to download and view the static pages)
 <br>
 <br>
 <ol>
